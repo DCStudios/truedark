@@ -1,0 +1,74 @@
+/* -- Default text and Line numbers ----------------------------------------------- */
+
+    .CodeMirror, .CodeMirror-Scroll,
+    .CodeMirror-gutter.CodeMirror-linenumbers {
+        background: #151515;
+        color: #AAA;
+    }
+
+    .CodeMirror-lines .CodeMirror-code pre {
+        z-index: 5;
+    }
+
+/* -- Selected Text --------------------------------------------------------------- */
+
+    .CodeMirror-selected {
+        background: #252525;
+    }
+
+    .CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+        background-color: #303030;
+        color: #FFF !important;
+        border-bottom: 1px solid #AAA;
+    }
+
+/* -- Fold Gutter ----------------------------------------------------------------- */
+
+    .CodeMirror-gutter.CodeMirror-foldgutter {
+        background: #222;
+        color: #AAA;
+        
+        box-shadow: 0 0 8px 1px #000,
+                    inset -1px 0 #000;
+    }
+
+    .CodeMirror-activeline .CodeMirror-gutter-wrapper .CodeMirror-gutter-elt:last-child {
+        background: #1C1C1C;
+        box-shadow: inset -1px 0 #000;
+    }
+
+    .CodeMirror-foldgutter-open::after,
+    .CodeMirror-foldgutter-folded::after{
+        margin-left: 3px;
+    }
+
+    .CodeMirror-foldgutter-open::after{content: '-';}
+    .CodeMirror-foldgutter-folded::after{content: '+';}
+
+    .CodeMirror-foldmarker {
+        border: none;
+        background: none;
+    }
+
+    .CodeMirror-foldmarker::after {
+        content: "...";
+    }
+
+/* -- Active line and line numbers ------------------------------------------------- */
+
+    .CodeMirror-activeline-background,
+    .CodeMirror-activeline .CodeMirror-gutter-wrapper .CodeMirror-linenumber {
+        background: #0C0C0C;
+        color: #AAA;
+    }
+
+/* -- Cursor ------------------------------------------------------------------------ */
+
+    .CodeMirror-cursor {
+        border-color: #AAA;
+        /*margin-left: 8px;*/
+    }
+
+    .CodeMirror-cursors {
+        z-index: 5;
+    }
